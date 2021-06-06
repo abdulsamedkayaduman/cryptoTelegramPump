@@ -4,3 +4,4 @@ anon.session-journal
 nohup.out
 Pipfile
 Pipfile.lock
+lib/__pycache__/

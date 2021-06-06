@@ -5,3 +5,4 @@ nohup.out
 Pipfile
 Pipfile.lock
 lib/__pycache__/
+lib/config.ini

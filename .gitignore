@@ -1,0 +1,6 @@
+anon.session
+anon.session-journal
+
+nohup.out
+Pipfile
+Pipfile.lock

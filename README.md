@@ -11,8 +11,8 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 
 
 ## Kullanım
-- pip clone 
-- lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
+1. pip clone 
+2. lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
 - pipenv shell
 - pipenv install -r requirements.txt
 - python main.py

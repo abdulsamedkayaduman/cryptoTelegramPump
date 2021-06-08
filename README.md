@@ -11,27 +11,15 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 
 
 ## Kullanım
-1. pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
-2. lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
-3. pipenv shell
-4. pipenv install -r requirements.txt
-5. python main.py
-
 
 ```bash
 
-pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
-lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
-pipenv shell
-pipenv install -r requirements.txt
-python main.py
+$ pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
+$ lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
+$ pipenv shell
+$ pipenv install -r requirements.txt
+$ python main.py
 
-
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
 ## License

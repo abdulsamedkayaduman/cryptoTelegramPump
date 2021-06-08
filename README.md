@@ -1,4 +1,4 @@
-# **Crypto Telegram Pump ![ds](https://www.resimyukle.org/images/2021/06/07/50b1d840e1608846b2c98c1b9a3cfa1a.png)**
+# Crypto Telegram Pump ![ds](https://www.resimyukle.org/images/2021/06/07/50b1d840e1608846b2c98c1b9a3cfa1a.png)
 ## Amaç
 Telegram grupları aracılığı ile [MXC](https://www.mxcio.co/auth/signup?inviteCode=19afq) veya [Gate.io](https://www.gate.io/ref/3924862) borsalarında pumpa katılamak.
 
@@ -27,9 +27,4 @@ $ python main.py
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-**merhaba**
-_Telegram pump sayfası bazlı yazılan bir python uygulaması._
 
-# Yapılacaklar
-```Gate.io da satışta tokenın 0'a eşit olma koşulunun düzeltilmesi gerekiyor.```
-`Düşük bakiyeli olan coinler (örn:0.1452) için satış isteği gönderilemiyor.`

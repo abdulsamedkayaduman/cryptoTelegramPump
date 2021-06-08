@@ -11,7 +11,7 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 
 
 ## Kullanım
-1. pip clone 
+1. pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
 2. lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
 3. pipenv shell
 4. pipenv install -r requirements.txt

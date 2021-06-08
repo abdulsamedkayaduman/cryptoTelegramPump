@@ -18,6 +18,8 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 5. python main.py
 
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 **merhaba**
 _Telegram pump sayfası bazlı yazılan bir python uygulaması._

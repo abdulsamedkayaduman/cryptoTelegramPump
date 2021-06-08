@@ -12,6 +12,8 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 
 ## Kullanım
 
+Adımları şu şekilde:
+
 ```bash
 
 $ pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
@@ -28,6 +30,6 @@ $ python main.py
 **merhaba**
 _Telegram pump sayfası bazlı yazılan bir python uygulaması._
 
-#Yapılacaklar
+# Yapılacaklar
 ```Gate.io da satışta tokenın 0'a eşit olma koşulunun düzeltilmesi gerekiyor.```
 `Düşük bakiyeli olan coinler (örn:0.1452) için satış isteği gönderilemiyor.`

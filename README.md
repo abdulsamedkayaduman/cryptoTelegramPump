@@ -18,7 +18,15 @@ Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde log
 5. python main.py
 
 
-```python
+```bash
+
+pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
+lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
+pipenv shell
+pipenv install -r requirements.txt
+python main.py
+
+
 import foobar
 
 foobar.pluralize('word') # returns 'words'

@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 def listen_group():
     # Remember to use your own values from my.telegram.org!
     logger.warning("we started!!!!")
-    api_id = 5080999
-    api_hash = '870736a793cec1d8f33d8122855ce1ca'
+    api_id = 50819989 #id from my.telegram.org
+    api_hash = '830436i793jec1d8f33d8122855ce1ca' #hash from my.telegram.org
     client = TelegramClient('anon', api_id, api_hash)
 
     #@client.on(events.NewMessage(chats='turkiyepumpgrubu_mxc'))

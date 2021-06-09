@@ -25,7 +25,7 @@ $ python main.py
 ```
 
 ## Yapılacak Geliştirmeler
--- Konfigurasyon düzenlemeleri.
+- Konfigurasyon düzenlemeleri.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

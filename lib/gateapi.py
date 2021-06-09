@@ -7,7 +7,7 @@ import logging
 import configparser
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('lib/config.ini')
 
 logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
 logger = logging.getLogger(__name__)

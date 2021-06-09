@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import configparser
-import time
-import requests
-import hmac
 import hashlib
+import hmac
+import time
 from urllib import parse
 
+import requests
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('lib/config.ini')
 
-API_KEY =  config['mxc']['key'] #'mx0g3UtwiwTqgU8m6j'
-SECRET_KEY = config['mxc']['secret'] #'aea8cdf8ae874d60897a37f1c18f2abc'
+API_KEY = config['mxc']['key']  # 'mx0g3UtwiwTqgU8m6j'
+SECRET_KEY = config['mxc']['secret']  # 'aea8cdf8ae874d60897a37f1c18f2abc'
 ROOT_URL = 'https://www.mxc.com'
 
 
@@ -244,26 +244,26 @@ def get_deal_detail(order_id):
     print(response.json())
 
 
-#if __name__ == '__main__':
-    #get_symbols()
-    #get_rate_limit()
-    #get_timestamp()
-    #get_ticker('TRX_USDT')
-    #get_depth('BTC_USDT', 5)
-    #get_deals('BTC_USDT', 5)
-    #get_kline('BTC_USDT', '1m')
-    #get_account_info()
-    #place_order('TRX_USDT', 8, 47.61, 'ASK', 'MARKET_ORDER')
-    #place_order('BTC_USDT', 7900, 0.1, 'BID', 'LIMIT_ORDER')
-    #cancel_order('cfc5a95618f****6d751dd04b2')
-    #cancel_order(['cfc5a95618f****d751dd04b2', 'b956dfc923d***31b383c9d'])
+# if __name__ == '__main__':
+# get_symbols()
+# get_rate_limit()
+# get_timestamp()
+# get_ticker('TRX_USDT')
+# get_depth('BTC_USDT', 5)
+# get_deals('BTC_USDT', 5)
+# get_kline('BTC_USDT', '1m')
+# get_account_info()
+# place_order('TRX_USDT', 8, 47.61, 'ASK', 'MARKET_ORDER')
+# place_order('BTC_USDT', 7900, 0.1, 'BID', 'LIMIT_ORDER')
+# cancel_order('cfc5a95618f****6d751dd04b2')
+# cancel_order(['cfc5a95618f****d751dd04b2', 'b956dfc923d***31b383c9d'])
 
-    #get_open_orders('WEST_USDT')
-    #get_all_orders('WEST_USDT', 'ASK')
-    #query_order('ccbd62471d***dd109903e')
-    #query_order(['ec72970d2****8264d7e86e', 'fd4d614ee4cf46***c7c82c0'])
-    #get_deal_orders('BTC_USDT')
-    #get_deal_detail('ccbd62471d*****ddd109903e')
+# get_open_orders('WEST_USDT')
+# get_all_orders('WEST_USDT', 'ASK')
+# query_order('ccbd62471d***dd109903e')
+# query_order(['ec72970d2****8264d7e86e', 'fd4d614ee4cf46***c7c82c0'])
+# get_deal_orders('BTC_USDT')
+# get_deal_detail('ccbd62471d*****ddd109903e')
 
 
 """

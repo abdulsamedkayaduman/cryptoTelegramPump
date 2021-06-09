@@ -18,7 +18,7 @@ Adımları şu şekilde:
 
 $ pip clone https://github.com/abdulsamedkayaduman/cryptoTelegramPump.git
 ```
-$ lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi
+Proje çekildikten sonra lib klasörü içinde bulunan config.ini dosyasına api key ve secretlerin girilmesi gerekmekte.
 ```
 $ pipenv shell
 $ pipenv install -r requirements.txt

@@ -1,5 +1,6 @@
-# Crypto Telegram Pump ![ds](https://www.resimyukle.org/images/2021/06/07/50b1d840e1608846b2c98c1b9a3cfa1a.png)
+# Crypto Telegram Pump ! <img src="https://cdn.icon-icons.com/icons2/2201/PNG/512/telegram_logo_circle_icon_134012.png" alt="drawing" width="30"/>
 ## Amaç
+
 
 Telegram grupları aracılığı ile [MXC](https://www.mxcio.co/auth/signup?inviteCode=19afq), [Probit](https://www.probit.com/r/39123396) veya [Gate.io](https://www.gate.io/ref/3924862) borsalarında pumpa katılamak.
 Şuanda uygulama telegramda bulunan [turkiye_pump_grup](https://t.me/turkiye_pump_grup)'nu takip etmekte.

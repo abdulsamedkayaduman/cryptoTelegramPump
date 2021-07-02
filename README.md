@@ -9,7 +9,8 @@ Alım yapıldıktan 30 saniye sonra satım işlemi gerçekleşmekte.
 Yapılan işlemlerde loglama işlemi yapılmakta. Hata alındığı taktirde loglarda görünmekte.
 
     Yapılan işlemler tamamen kullanıcının insiyatifindedir. Kar veya zararlarınızda her hangi bir sorumluluk kabul edilmemektedir.
-
+ 
+ 
 
 ## Kullanım
 

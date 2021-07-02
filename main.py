@@ -1,24 +1,27 @@
 import logging
 import time
 
-from telethon import TelegramClient, events, sync
-import lib.mxcApiOperations as mxcao
-import lib.gateapi as gateio
+from telethon import TelegramClient, events
 
-borsa_name = "GATEIO"
-logging.basicConfig(format='%(asctime)s :: %(name)s :: %(levelname)-8s ::  %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.INFO)
+import lib.ProbitApiOperations as proao
+import lib.gateapi as gateio
+import lib.mxcApiOperations as mxcao
+
+borsa_name = "PROBIT"
+logging.basicConfig(format='%(asctime)s :: %(name)s :: %(levelname)-8s ::  %(message)s', datefmt='%m/%d/%Y %H:%M:%S',
+                    level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
 def listen_group():
     # Remember to use your own values from my.telegram.org!
-    logger.warning("we started!!!!")
-    api_id = 50819989 #id from my.telegram.org
-    api_hash = '830436i793jec1d8f33d8122855ce1ca' #hash from my.telegram.org
+    logger.warning("Waiting for coin message.")
+    api_id = 5080999
+    api_hash = '870736a793cec1d8f33d8122855ce1ca'
     client = TelegramClient('anon', api_id, api_hash)
 
-    #@client.on(events.NewMessage(chats='turkiyepumpgrubu_mxc'))
-    #@client.on(events.NewMessage(chats=('pumpdenemegrubu','turkiyepumpgrubu_mxc')))
+    # @client.on(events.NewMessage(chats='turkiyepumpgrubu_mxc'))
+    # @client.on(events.NewMessage(chats=('pumpdenemegrubu','turkiyepumpgrubu_mxc')))
     @client.on(events.NewMessage(chats=("pumpdenemegrubu", "turkiye_pump_grup")))
     async def my_event_handler(event):
         logger.warning(event.raw_text)
@@ -27,7 +30,8 @@ def listen_group():
 
     client.start()
     client.run_until_disconnected()
- 
+
+
 def event_borsa_operation(message):
     global borsa_name
     message = f"abdulsamed {message}"
@@ -38,6 +42,10 @@ def event_borsa_operation(message):
     elif message.find("MXC") > 0 or message.find("mxc") > 0 or message.find("mxc.com") > 0 or message.find(
             "MXC.COM") > 0:
         borsa_name = "MXC"
+        logger.warning(f"Spot operations will be made on {borsa_name}")
+    elif message.find("PROBİT") > 0 or message.find("PROBIT") > 0 or message.find("probit") > 0 or message.find(
+            "probit.com") > 0:
+        borsa_name = "PROBIT"
         logger.warning(f"Spot operations will be made on {borsa_name}")
     else:
         logger.warning(f"No borsa_name set. Last status {borsa_name}.")
@@ -67,6 +75,12 @@ def event_coin_operation(message):
                         sell = gateio.spot(pair=pair, side="SELL")
                     else:
                         logger.warning(f"Pair {pair} not exist on market {borsa_name}")
+                elif borsa_name == "PROBIT":
+                    buy = proao.buy_coin_market(pair=pair, cost=2)
+                    logger.warning(f"Buy operation response {buy}")
+                    time.sleep(30)
+                    sell = proao.sell_coin_market(pair=pair)
+                    logger.warning(f"Sell operation response {sell}")
                 else:
                     logger.warning("Borsa can not found.")
     else:

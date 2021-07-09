@@ -91,4 +91,3 @@ def event_coin_operation(message):
 if __name__ == '__main__':
     listen_group()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
